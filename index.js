@@ -1,4 +1,6 @@
 const { Client, WebEmbed, SpotifyRPC, RichPresence } = require("discord.js-selfbot-v13");
+const express = require("express"); // Tambahkan express untuk membuat server
+const app = express();
 const client = new Client();
 const waktu = 1734195187542
 
@@ -58,3 +60,12 @@ client.on("messageCreate", async (message) => {
 
 
 client.login(env.TOKEN); // Ganti dengan token selfbot Anda
+
+app.get("/", (req, res) => {
+  res.send("Bot is running...");
+});
+
+// Jalankan server di port default (Vercel akan menentukan port secara otomatis)
+app.listen(3000, () => {
+  console.log("Server is running!");
+});
