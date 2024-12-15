@@ -1,3 +1,6 @@
+require('web-streams-polyfill/auto'); // Menyediakan polyfill untuk ReadableStream
+
+// Import module yang lain
 const { Client, WebEmbed, SpotifyRPC, RichPresence } = require("discord.js-selfbot-v13");
 const express = require("express"); // Tambahkan express untuk membuat server
 const app = express();
