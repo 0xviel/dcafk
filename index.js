@@ -57,4 +57,4 @@ client.on("messageCreate", async (message) => {
 });
 
 
-client.login(""); // Ganti dengan token selfbot Anda
+client.login(env.TOKEN); // Ganti dengan token selfbot Anda
