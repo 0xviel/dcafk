@@ -1,0 +1,16 @@
+{
+  "name": "discord-selfbot",
+  "version": "1.0.0",
+  "description": "A Discord Selfbot deployed to Vercel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.4.0",
+    "express": "^4.17.3"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
